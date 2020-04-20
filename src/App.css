@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(250, 250,250);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.yellow
+{
+  border-bottom: 10px solid #FFC107;
+  border-radius: 2px;
+}
+.green
+{
+  border-bottom: 10px solid #28A745;
+  border-radius: 2px;
+}
+.red
+{
+  border-bottom: 10px solid #DC3545;
+  border-radius: 2px;
+}
+.teal
+{
+  border-bottom: 10px solid #17A2B8;
+  border-radius: 50px;
+}
+.image {
+  width: 370px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
