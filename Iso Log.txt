@@ -1,3 +1,7 @@
+API used:
+https://covid19india.p.rapidapi.com/getStateData/
+
+Api Data for the states: 
 {id: 2, active: 610, value: 722, name: "Andhra Pradesh", confirmed: "722", …}
 
 Post.js:20 Invalide State Code
