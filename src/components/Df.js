@@ -8,12 +8,12 @@ function DataFetching() {
 	const [id, setId] = useState('')
 	const [idFromButtonClick, setIdFromButtonClick] = useState(1)
 
-	const stateCode = ['AP', 'AS', 'BR', 'CH', 'DL', 'GA', 'GJ',
+	const stateCode = ['','AP', 'AS', 'BR', 'CH', 'DL', 'GA', 'GJ',
 		'HR', 'HP', 'JK', 'JH', 'KA', 'KL', 'MP',
 		'MH', 'MN', 'ML', 'MZ', 'NL', 'OR', 'PY',
 		'PB', 'RJ', 'TN', 'TR', 'UP', 'WB'];
 
-	const state = ['Andhra Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat',
+	const state = ['Select State','Andhra Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat',
 		'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka	', 'Kerala', 'Madhya Pradesh',
 		'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry',
 		'Punjab', 'Rajasthan', 'Tamil Nadu', 'Tripura', 'Uttar Pradesh', 'West Bengal'];
