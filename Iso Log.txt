@@ -1,0 +1,76 @@
+{id: 2, active: 610, value: 722, name: "Andhra Pradesh", confirmed: "722", …}
+
+Post.js:20 Invalide State Code
+
+Post.js:20 {id: 4, active: 15, value: 35, name: "Assam", confirmed: "35", …}
+
+Post.js:20 {id: 5, active: 69, value: 113, name: "Bihar", confirmed: "113", …}
+
+Post.js:20 {id: 7, active: 11, value: 36, name: "Chhattisgarh", confirmed: "36", …}
+
+Post.js:20 Invalide State Code
+
+Post.js:20 {id: 8, active: 1603, value: 2081, name: "Delhi", confirmed: "2081", …}
+
+Post.js:20 {id: 9, active: 0, value: 7, name: "Goa", confirmed: "7", …}
+
+Post.js:20 {id: 10, active: 1737, value: 1939, name: "Gujarat", confirmed: "1939", …}
+
+Post.js:20 {id: 11, active: 124, value: 254, name: "Haryana", confirmed: "254", …}
+
+Post.js:20 {id: 12, active: 22, value: 39, name: "Himachal Pradesh", confirmed: "39", …}
+
+Post.js:20 {id: 13, active: 292, value: 368, name: "Jammu and Kashmir", confirmed: "368", …}
+
+Post.js:20 {id: 14, active: 44, value: 46, name: "Jharkhand", confirmed: "46", …}
+
+Post.js:20 {id: 15, active: 280, value: 408, name: "Karnataka", confirmed: "408", …}
+
+Post.js:20 {id: 16, active: 114, value: 408, name: "Kerala", confirmed: "408", …}
+
+2Post.js:20 Invalide State Code
+
+Post.js:20 {id: 18, active: 1284, value: 1485, name: "Madhya Pradesh", confirmed: "1485", …}
+
+Post.js:20 {id: 19, active: 3862, value: 4666, name: "Maharashtra", confirmed: "4666", …}
+
+Post.js:20 {id: 20, active: 0, value: 2, name: "Manipur", confirmed: "2", …}
+
+Post.js:20 {id: 21, active: 10, value: 11, name: "Meghalaya", confirmed: "11", …}
+
+Post.js:20 {id: 22, active: 1, value: 1, name: "Mizoram", confirmed: "1", …}
+
+Post.js:20 {id: 23, active: 0, value: 0, name: "Nagaland", confirmed: "0", …}
+
+Post.js:20 {id: 24, active: 49, value: 74, name: "Odisha", confirmed: "74", …}
+
+Post.js:20 {id: 25, active: 4, value: 7, name: "Puducherry", confirmed: "7", …}
+
+Post.js:20 {id: 26, active: 191, value: 245, name: "Punjab", confirmed: "245", …}
+
+Post.js:20 {id: 27, active: 1346, value: 1576, name: "Rajasthan", confirmed: "1576", …}
+
+3Post.js:20 Invalide State Code
+
+Post.js:20 {id: 28, active: 1046, value: 1520, name: "Tamil Nadu", confirmed: "1520", …}
+
+Post.js:20 Invalide State Code
+
+Post.js:20 {id: 30, active: 1, value: 2, name: "Tripura", confirmed: "2", …}
+
+Post.js:20 Invalide State Code
+
+Post.js:20 {id: 32, active: 1026, value: 1184, name: "Uttar Pradesh", confirmed: "1184", …}
+
+Post.js:20 Invalide State Code
+
+Post.js:20 {id: 33, active: 307, value: 392, name: "West Bengal", confirmed: "392", …}
+
+Post.js:20 {id: 7, active: 11, value: 36, name: "Chhattisgarh", confirmed: "36", …}
+
+
+Missing ISO of :
+id : 1 , 3 , 6 , 17 , 29 , 31 
+
+States : "Andaman and Nicobar Islands" , "Arunachal Pradesh" , "Chandigarh" (Chandigarh and Chhattisgarh iso interchanged) ,
+	 "Dadra and Nagar Haveli" , "Daman and Diu" , "Ladakh" , "Lakshadweep" , "Sikkim" , "Telangana" , "Uttarakhand"
