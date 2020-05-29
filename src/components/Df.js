@@ -6,31 +6,31 @@ import Data from './Data'
 function DataFetching() {
 	const [posts, setPosts] = useState([])
 	const [id, setId] = useState('')
-	const [idFromButtonClick, setIdFromButtonClick] = useState(1)
+	const [idFromButtonClick, setIdFromButtonClick] = useState('')
 
-	const stateCode = ['','AP', 'AS', 'BR', 'CH', 'DL', 'GA', 'GJ',
-		'HR', 'HP', 'JK', 'JH', 'KA', 'KL', 'MP',
-		'MH', 'MN', 'ML', 'MZ', 'NL', 'OR', 'PY',
-		'PB', 'RJ', 'TN', 'TR', 'UP', 'WB'];
+	const [confirmed, setConfirmed] = useState('');
+	const [active, setActive] = useState('')
+	const [deaths, setDeath] = useState('')
+	const [recovered, setRecovered] = useState('')
 
-	const state = ['Select State','Andhra Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat',
-		'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka	', 'Kerala', 'Madhya Pradesh',
-		'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry',
-		'Punjab', 'Rajasthan', 'Tamil Nadu', 'Tripura', 'Uttar Pradesh', 'West Bengal'];
+	const stateCode = ['','IN-AN','IN-AP', 'IN-AR', 'IN-AS', 'IN-BR', 'IN-CH','IN-CT','IN-DN', 'IN-DD', 'IN-DL', 'IN-GA', 'IN-GJ',
+						'IN-HR', 'IN-HP', 'IN-JK', 'IN-JH', 'IN-KA', 'IN-KL','IN-LA', 'IN-LD', 'IN-MP',
+						'IN-MH', 'IN-MN', 'IN-ML', 'IN-MZ', 'IN-NL', 'IN-OR', 'IN-PY',
+						'IN-PB', 'IN-RJ','IN-SK', 'IN-TN','IN-TG', 'IN-TR', 'IN-UP','IN-UT', 'IN-WB'];
 
+	const state = ['Select State','Andaman and Nicobar Islands','Andhra Pradesh','Arunachal Pradesh', 'Assam', 'Bihar','Chandigarh','Chhattisgarh','Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat',
+					'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka	', 'Kerala','Ladakh','Lakshadweep', 'Madhya Pradesh',
+					'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry',
+					'Punjab', 'Rajasthan','Sikkim', 'Tamil Nadu','Telangana', 'Tripura', 'Uttar Pradesh','Uttarakhand', 'West Bengal'];
+
+	
 	useEffect(() => {
 		axios({
 			"method": "GET",
-			"url": `https://covid19india.p.rapidapi.com/getStateData/${id}`,
-			"headers": {
-				"content-type": "application/octet-stream",
-				"x-rapidapi-host": "covid19india.p.rapidapi.com",
-				"x-rapidapi-key": "0577cace1cmsh16549506bfab3dep1a7116jsnaf23580d2668"
-			}
+			"url": 'https://api.covidindiatracker.com/state_data.json',
 		})
 			.then((res) => {
-				console.log(res.data.response);
-				setPosts(res.data.response)
+				setPosts(res.data)
 			})
 			.catch((error) => {
 				console.log(error)
@@ -38,17 +38,22 @@ function DataFetching() {
 	}, [idFromButtonClick])
 
 	const handleClick = () => {
-		setIdFromButtonClick(id)
+		setIdFromButtonClick(id);
+		
+		posts.forEach(element => {
+			if(element.id === id)
+			{
+				setConfirmed(element.confirmed);
+				setActive(element.active);
+				setRecovered(element.recovered);
+				setDeath(element.deaths);				
+			}
+		});
 	}
-
-	const confirmed = posts.confirmed;
-	const active = posts.active;
-	const recovered = posts.recovered;
-	const deaths = posts.deaths;
 	return (
 		<div>
 			<div className="row">
-				<div className="col-sm-8">
+				<div className="col">
 					<select onChange={e => setId(e.target.value)}>
 						{
 							stateCode.map((x, index) =>
@@ -57,7 +62,7 @@ function DataFetching() {
 					</select>
 				</div>
 				
-				<div className="col-sm-4">
+				<div className="col">
 					<button type="button" className="btn btn-primary" onClick={handleClick}>View Data</button>
 				</div>
 			</div>
