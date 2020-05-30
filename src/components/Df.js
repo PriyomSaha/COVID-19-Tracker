@@ -22,7 +22,21 @@ function DataFetching() {
 					'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka	', 'Kerala','Ladakh','Lakshadweep', 'Madhya Pradesh',
 					'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry',
 					'Punjab', 'Rajasthan','Sikkim', 'Tamil Nadu','Telangana', 'Tripura', 'Uttar Pradesh','Uttarakhand', 'West Bengal'];
-
+	
+		axios({
+			"method": "GET",
+			"url": 'https://api.covidindiatracker.com/total.json',
+		})
+			.then((res) => {
+				setConfirmed(res.data.confirmed);
+				setActive(res.data.active);
+				setRecovered(res.data.recovered);
+				setDeath(res.data.deaths);
+				
+			})
+			.catch((error) => {
+				console.log(error)
+			})
 	
 	useEffect(() => {
 		axios({
