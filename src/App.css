@@ -32,11 +32,13 @@ body {
   width: 370px;
   margin-top: 50px;
 }
-
+.select{
+  height: 5vh;
+}
 @media only screen and (max-width: 770px) {
-  .container {
-    margin: 0 10%;
-  }
+ .select{
+   margin-bottom: 1vh;
+ }
 
   .image {
     width: 100%;

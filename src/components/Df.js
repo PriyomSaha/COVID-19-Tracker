@@ -54,7 +54,7 @@ function DataFetching() {
 		<div>
 			<div className="row">
 				<div className="col">
-					<select onChange={e => setId(e.target.value)}>
+					<select className="select" onChange={e => setId(e.target.value)}>
 						{
 							stateCode.map((x, index) =>
 								<option key={x} value={x}>{state[index]}</option>)
