@@ -63,7 +63,7 @@ function DataFetching() {
 				</div>
 				
 				<div className="col">
-					<button type="button" className="btn btn-primary" onClick={handleClick}>View Data</button>
+					<button type="button" className="btn btn-primary" onClick={handleClick}>Result</button>
 				</div>
 			</div>
 			<br/>

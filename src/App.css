@@ -37,7 +37,7 @@ body {
 }
 @media only screen and (max-width: 770px) {
  .select{
-   margin-bottom: 1vh;
+   margin: 0 0 1vh 0;
  }
 
   .image {
