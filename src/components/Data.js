@@ -13,40 +13,40 @@ export default function Data(props) {
                     <div className="card-body">
                         <h4 className="card-title"><b>Recovered</b></h4>
                         <hr />
-                        <p className="card-text"><h1>{props.recovered}</h1></p>
-                        <p className="card-text"><small className="text-muted">Updated on {date}</small></p>
-                        <p className="card-text">Number of recoveries from COVID-19</p>
+                        <div className="card-text"><h1>{props.recovered}</h1></div>
+                        <div className="card-text"><small className="text-muted">Updated on {date}</small></div>
+                        <div className="card-text">Number of recoveries from COVID-19</div>
                     </div>
                 </div>
                 <div className="card yellow">
                     <div className="card-body">
                         <h4 className="card-title"><b>Active</b></h4>
                         <hr />
-                        <p className="card-text"><h1>{props.active}</h1></p>
-                        <p className="card-text"><small className="text-muted">Updated on {date}</small></p>
-                        <p className="card-text">Number of active cases of COVID-19.</p>
+                        <div className="card-text"><h1>{props.active}</h1></div>
+                        <div className="card-text"><small className="text-muted">Updated on {date}</small></div>
+                        <div className="card-text">Number of active cases of COVID-19.</div>
                     </div>
                 </div>
                 <div className="card red">
                     <div className="card-body">
                         <h4 className="card-title"><b>Deaths</b></h4>
                         <hr />
-                        <p className="card-text"><h1>{props.deaths}</h1></p>
-                        <p className="card-text"><small className="text-muted">Updated on {date}</small></p>
-                        <p className="card-text">Number of deaths caused by COVID-19.</p>
+                        <div className="card-text"><h1>{props.deaths}</h1></div>
+                        <div className="card-text"><small className="text-muted">Updated on {date}</small></div>
+                        <div className="card-text">Number of deaths caused by COVID-19.</div>
                     </div>
                 </div>
             </div>
-            <div class="card text-center">
-                <div class="card-header">
+            <div className="card text-center">
+                <div className="card-header">
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                     <h4 className="card-title"><b>Total Affected</b></h4>
                     <hr />
-                    <p className="card-text"><h1>{props.confirmed}</h1></p>
-                    <p className="card-text"><small className="text-muted">Updated on {date}</small></p>
+                    <div className="card-text"><h1>{props.confirmed}</h1></div>
+                    <div className="card-text"><small className="text-muted">Updated on {date}</small></div>
                 </div>
-                <div class="card-footer text-muted teal">
+                <div className="card-footer text-muted teal">
                     C O R O N A
                 </div>
             </div>

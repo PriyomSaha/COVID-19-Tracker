@@ -15,11 +15,6 @@ const [recovered, setRecovered] = useState('----')
 
 const [dist, setDist] = useState(['Select District'])
 
-const stateCode = ['', 'IN-AN', 'IN-AP', 'IN-AR', 'IN-AS', 'IN-BR', 'IN-CH', 'IN-CT', 'IN-DN', 'IN-DD', 'IN-DL', 'IN-GA', 'IN-GJ',
-'IN-HR', 'IN-HP', 'IN-JK', 'IN-JH', 'IN-KA', 'IN-KL', 'IN-LA', 'IN-LD', 'IN-MP',
-'IN-MH', 'IN-MN', 'IN-ML', 'IN-MZ', 'IN-NL', 'IN-OR', 'IN-PY',
-'IN-PB', 'IN-RJ', 'IN-SK', 'IN-TN', 'IN-TG', 'IN-TR', 'IN-UP', 'IN-UT', 'IN-WB'];
-
 const state = ['Select State', 'Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh',
 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat',
 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka	', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh',
@@ -68,7 +63,7 @@ return (
 			<select className="select state" onChange = {e => (setDistData(e.target.value))}>
 				{
 					dist.map((value) =>
-						<option>{value}</option>)
+						<option key={value}>{value}</option>)
 				}
 			</select>
 		</div>
